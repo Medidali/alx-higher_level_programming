@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    s
     row_len = len(matrix)
     col_len = len(matrix[0])
 
