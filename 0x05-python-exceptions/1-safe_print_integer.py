@@ -1,10 +1,8 @@
-#!/usr/bin/puyhon3
+#!/usr/bin/python3
 def safe_print_integer(value):
     try:
         print("{:d}".format(value))
-        print()
-    except (ValueError, TypeError):
+    except(ValueError, TypeError):
         return False
     else:
         return True
-
