@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-"class square"
+"""Square class"""
 
 
-class square:
-    "representation"
+class Square:
+    "Representation"
 
     def __init__(self, size=0):
-        "instantiation"
+        "Instantiation"
         self.size = size
 
     @property
     def size(self):
-        "property to retrieve the value of size"
-        return self.size
+        """Property to retrieve size"""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -24,5 +24,5 @@ class square:
         self.__size = value
 
     def area(self):
-        "public instance methode that return area of square"
+        """Public instance method that returns the current square area"""
         return self.__size ** 2
