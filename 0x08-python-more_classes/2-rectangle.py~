@@ -31,7 +31,7 @@ class Rectangle():
 
     @height.setter
     def height(self, value):
-        """Property setter to set height"""
+        """Property setter to set height"""AOA
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
