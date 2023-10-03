@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """n-queens backtracking program to print the coordinates"""
+
+
 from sys import argv
 
 if __name__ == "__main__":
