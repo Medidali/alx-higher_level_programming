@@ -3,7 +3,9 @@
 Contains the class BaseGeometry
 """
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """A class with public instance methods area and integer_validator"""
@@ -15,5 +17,3 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
-
-    
