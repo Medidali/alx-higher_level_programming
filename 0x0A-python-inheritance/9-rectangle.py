@@ -1,8 +1,6 @@
 #!/usr/bin/python3
+"""Contains the class BaseGeometry
 """
-Contains the class BaseGeometry
-"""
-
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
@@ -23,6 +21,6 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-         """custom str method for print the rectangle"""
+        """custom str method for print the rectangle"""
 
-         return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
