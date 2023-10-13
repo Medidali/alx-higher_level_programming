@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+"function"
+
+
+def read_file(filename=""):
+    """function that ...."""
+
+    with open("filename", encoding="utf-8") as f
+    data_read = f.read()
+    print(data_read)
