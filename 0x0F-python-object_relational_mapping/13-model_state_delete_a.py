@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects that contain the letter a from the database
+Script that deletes all State objects with a name containing
+the letter a from the database
 Using module SQLAlchemy
 """
 
@@ -18,9 +19,9 @@ if __name__ == "__main__":
     # create a Session
     session = Session()
     Base.metadata.create_all(engine)
-
-    s_tate = session.query(State).filter(State.name.like('%a%'))\
-                                 .order_by(State.id).all()
-    for state in s_tate:
-        print("{}: {}".format(state.id, state.name))
+    state_del = session.query(State).filter(State.name.like('%a%')).all()
+    for delete in state_del:
+        session.delete(delete)
+    # commit and close session
+    session.commit()
     session.close()

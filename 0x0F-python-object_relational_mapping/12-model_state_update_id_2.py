@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects that contain the letter a from the database
+Script that changes the name of a State object to the database
 Using module SQLAlchemy
 """
 
@@ -18,9 +18,8 @@ if __name__ == "__main__":
     # create a Session
     session = Session()
     Base.metadata.create_all(engine)
-
-    s_tate = session.query(State).filter(State.name.like('%a%'))\
-                                 .order_by(State.id).all()
-    for state in s_tate:
-        print("{}: {}".format(state.id, state.name))
+    state_update = session.query(State).filter_by(id='2').first()
+    state_update.name = "New Mexico"
+    # commit and close session
+    session.commit()
     session.close()
