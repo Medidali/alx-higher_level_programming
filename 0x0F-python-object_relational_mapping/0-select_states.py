@@ -21,4 +21,3 @@ if __name__ == '__main__':
     # Clean up process
     cur.close()
     db.close()
-
