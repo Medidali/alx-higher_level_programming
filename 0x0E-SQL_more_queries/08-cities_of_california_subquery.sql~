@@ -1,0 +1,7 @@
+-- LIST cities of california states
+
+-- LIST cities
+
+SELECT FROM cities
+WHERE name = "califournia"
+ORDER BY cities.id BY ASC;
